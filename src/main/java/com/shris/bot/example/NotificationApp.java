@@ -2,7 +2,7 @@ package com.shris.bot.example;
 
 import com.shris.bot.actor.ControlSystemActor;
 import com.shris.bot.config.NotificationConfig;
-import akka.actor.typed.ActorSystem;
+import org.apache.pekko.actor.typed.ActorSystem;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

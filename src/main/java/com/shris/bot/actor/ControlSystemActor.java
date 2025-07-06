@@ -1,7 +1,7 @@
 package com.shris.bot.actor;
 
-import akka.actor.typed.*;
-import akka.actor.typed.javadsl.*;
+import org.apache.pekko.actor.typed.*;
+import org.apache.pekko.actor.typed.javadsl.*;
 import com.shris.bot.config.NotificationConfig;
 import com.shris.bot.service.NotificationService;
 import lombok.extern.slf4j.Slf4j;

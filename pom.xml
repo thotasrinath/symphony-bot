@@ -23,9 +23,9 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>com.typesafe.akka</groupId>
-                <artifactId>akka-bom_${scala.binary.version}</artifactId>
-                <version>2.10.7</version>
+                <groupId>org.apache.pekko</groupId>
+                <artifactId>pekko-bom_${scala.binary.version}</artifactId>
+                <version>1.0.1</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -34,9 +34,20 @@
 
     <repositories>
         <repository>
-            <id>akka-repository</id>
-            <name>Akka library repository</name>
-            <url>https://repo.akka.io/maven</url>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>apache-snapshots</id>
+            <name>Apache Snapshots</name>
+            <url>https://repository.apache.org/content/repositories/snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
 
@@ -50,15 +61,11 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <!-- Akka Actor Dependencies -->
+        <!-- Apache Pekko Actor Dependencies -->
         <dependency>
-            <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-actor-typed_${scala.binary.version}</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-actor-testkit-typed_${scala.binary.version}</artifactId>
-            <scope>test</scope>
+            <groupId>org.apache.pekko</groupId>
+            <artifactId>pekko-actor-typed_${scala.binary.version}</artifactId>
+            <version>1.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

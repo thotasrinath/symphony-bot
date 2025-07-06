@@ -1,6 +1,6 @@
 package com.shris.bot;
 
-import akka.actor.typed.ActorSystem;
+import org.apache.pekko.actor.typed.ActorSystem;
 import com.shris.bot.actor.ControlSystemActor;
 import com.shris.bot.config.NotificationConfig;
 import com.shris.bot.service.NotificationService;

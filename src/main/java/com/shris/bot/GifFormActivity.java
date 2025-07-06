@@ -29,7 +29,7 @@ public class GifFormActivity extends FormReplyActivity<FormReplyContext> {
   public void onActivity(FormReplyContext context) {
     final String category = context.getFormValue("category");
     final String message = "<messageML>Received category '" + category + "'</messageML>";
-    this.messageService.send(context.getSourceEvent().getStream(), Message.builder().content(message).build());
+    this.messageService.send( context.getSourceEvent().getStream(), Message.builder().content(message).build());
   }
 
   @Override

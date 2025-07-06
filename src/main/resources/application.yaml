@@ -1,0 +1,11 @@
+bdk:
+  host: develop2.symphony.com
+
+  bot:
+    username: devcertbot8728
+    privateKey:
+      path: src/main/resources/rsa/devcertbot8728-private.pem
+
+logging:
+  level:
+    com.symphony: debug
